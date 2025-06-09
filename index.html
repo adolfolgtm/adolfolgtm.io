@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Gallinas</title>
+    <style>
+        body {
+            background-color: red; /* Fondo rojo */
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            animation: moveText 5s linear infinite; /* Movimiento de las letras */
+        }
+
+        @keyframes moveText {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(50px); }
+            100% { transform: translateX(0); }
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .gallina-image {
+            width: 300px;
+            height: auto;
+            margin: 20px;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid white;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2a800;
+        }
+
+        tr:nth-child(even) {
+            background-color: #555;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #333;
+        }
+
+        .gallinas {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .video-container {
+            margin-top: 20px;
+        }
+
+        video {
+            width: 80%;
+            max-width: 800px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenidos a la Página de Gallinas</h1>
+
+    <div class="container">
+        <p>En esta página podrás ver algunas imágenes de gallinas, un video y conocer más sobre ellas.</p>
+        
+        <!-- Sección de Gallinas -->
+        <div class="gallinas">
+            <!-- Imágenes de gallinas (puedes agregar más imágenes aquí) -->
+            <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Gallina 1" class="gallina-image">
+            <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Gallina 2" class="gallina-image">
+            <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Gallina 3" class="gallina-image">
+        </div>
+
+        <!-- Tabla con información -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Tipo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Gallina Blanca</td>
+                    <td>2 años</td>
+                    <td>Doméstica</td>
+                </tr>
+                <tr>
+                    <td>Gallina Negra</td>
+                    <td>3 años</td>
+                    <td>Doméstica</td>
+                </tr>
+                <tr>
+                    <td>Gallina Roja</td>
+                    <td>1 año</td>
+                    <td>Silvestre</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Video desde YouTube -->
+        <div class="video-container">
+            <h2>Video sobre Gallinas</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/maKLQYkJa04" title="Video de Gallinas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script>
+        // Este código puede ser usado para agregar más interactividad si lo deseas.
+        console.log("¡Bienvenido a la página de gallinas!");
+    </script>
+</body>
+</html>
+
